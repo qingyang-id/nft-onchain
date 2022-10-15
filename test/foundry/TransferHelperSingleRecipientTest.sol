@@ -42,8 +42,8 @@ import {
 } from "../../contracts/test/InvalidERC721Recipient.sol";
 
 import {
-    TokenTransferrerErrors
-} from "../../contracts/interfaces/TokenTransferrerErrors.sol";
+    TokenTransferorErrors
+} from "../../contracts/interfaces/TokenTransferorErrors.sol";
 
 import {
     TransferHelperInterface
@@ -726,7 +726,7 @@ contract TransferHelperSingleRecipientTest is BaseOrderTest {
             alice,
             bob,
             abi.encodePacked(
-                TokenTransferrerErrors.InvalidERC721TransferAmount.selector
+                TokenTransferorErrors.InvalidERC721TransferAmount.selector
             )
         );
     }
@@ -755,7 +755,7 @@ contract TransferHelperSingleRecipientTest is BaseOrderTest {
             alice,
             bob,
             abi.encodePacked(
-                TokenTransferrerErrors.InvalidERC721TransferAmount.selector
+                TokenTransferorErrors.InvalidERC721TransferAmount.selector
             )
         );
     }

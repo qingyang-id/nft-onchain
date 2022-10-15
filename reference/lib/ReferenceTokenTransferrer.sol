@@ -10,10 +10,10 @@ import {
 } from "contracts/interfaces/AbridgedTokenInterfaces.sol";
 
 import {
-    TokenTransferrerErrors
-} from "contracts/interfaces/TokenTransferrerErrors.sol";
+    TokenTransferorErrors
+} from "contracts/interfaces/TokenTransferorErrors.sol";
 
-contract ReferenceTokenTransferrer is TokenTransferrerErrors {
+contract ReferenceTokenTransferor is TokenTransferorErrors {
     /**
      * @dev Internal function to transfer ERC20 tokens from a given originator
      *      to a given recipient. Sufficient approvals must be set on the

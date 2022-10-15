@@ -2,9 +2,9 @@
 pragma solidity ^0.8.7;
 
 /**
- * @title TokenTransferrerErrors
+ * @title TokenTransferorErrors
  */
-interface TokenTransferrerErrors {
+interface TokenTransferorErrors {
     /**
      * @dev Revert with an error when an ERC721 transfer with amount other than
      *      one is attempted.

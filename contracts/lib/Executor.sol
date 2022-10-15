@@ -11,7 +11,7 @@ import { ReceivedItem } from "./ConsiderationStructs.sol";
 
 import { Verifiers } from "./Verifiers.sol";
 
-import { TokenTransferrer } from "./TokenTransferrer.sol";
+import { TokenTransferor } from "./TokenTransferor.sol";
 
 import "./ConsiderationConstants.sol";
 
@@ -21,7 +21,7 @@ import "./ConsiderationConstants.sol";
  * @notice Executor contains functions related to processing executions (i.e.
  *         transferring items, either directly or via conduits).
  */
-contract Executor is Verifiers, TokenTransferrer {
+contract Executor is Verifiers, TokenTransferor {
     /**
      * @dev Derive and set hashes, reference chainId, and associated domain
      *      separator during deployment.

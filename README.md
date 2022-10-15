@@ -102,8 +102,8 @@ graph TD
     OrderFulfiller --> OrderValidator
 
     OrderValidator --> ZoneInteraction
-    OrderValidator --> Executor --> TokenTransferrer
-    Executor --> Conduit --> TokenTransferrer
+    OrderValidator --> Executor --> TokenTransferor
+    Executor --> Conduit --> TokenTransferor
     Executor --> Verify
 
     subgraph Verifiers[ ]

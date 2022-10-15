@@ -22,7 +22,7 @@ import { ReceivedItem } from "contracts/lib/ConsiderationStructs.sol";
 
 import { ReferenceVerifiers } from "./ReferenceVerifiers.sol";
 
-import { ReferenceTokenTransferrer } from "./ReferenceTokenTransferrer.sol";
+import { ReferenceTokenTransferor } from "./ReferenceTokenTransferor.sol";
 
 import "contracts/lib/ConsiderationConstants.sol";
 
@@ -34,7 +34,7 @@ import { AccumulatorStruct } from "./ReferenceConsiderationStructs.sol";
  * @notice Executor contains functions related to processing executions (i.e.
  *         transferring items, either directly or via conduits).
  */
-contract ReferenceExecutor is ReferenceVerifiers, ReferenceTokenTransferrer {
+contract ReferenceExecutor is ReferenceVerifiers, ReferenceTokenTransferor {
     /**
      * @dev Derive and set hashes, reference chainId, and associated domain
      *      separator during deployment.

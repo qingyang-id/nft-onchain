@@ -20,7 +20,7 @@ module.exports = {
     "lib/ConsiderationInternalView.sol",
     "lib/ConsiderationPure.sol",
     "lib/ConsiderationStructs.sol",
-    "lib/TokenTransferrer.sol",
+    "lib/TokenTransferor.sol",
     "test/EIP1271Wallet.sol",
     "test/ExcessReturnDataRecipient.sol",
     "test/Reenterer.sol",

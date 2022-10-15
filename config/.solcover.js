@@ -21,7 +21,7 @@ module.exports = {
     "reference/lib/ReferenceConsiderationInternal.sol",
     "reference/lib/ReferenceConsiderationInternalView.sol",
     "reference/lib/ReferenceConsiderationPure.sol",
-    "reference/lib/ReferenceTokenTransferrer.sol",
+    "reference/lib/ReferenceTokenTransferor.sol",
     "test/EIP1271Wallet.sol",
     "test/ExcessReturnDataRecipient.sol",
     "test/ERC1155BatchRecipient.sol",

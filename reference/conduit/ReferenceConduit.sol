@@ -6,8 +6,8 @@ import { ConduitInterface } from "contracts/interfaces/ConduitInterface.sol";
 import { ConduitItemType } from "contracts/conduit/lib/ConduitEnums.sol";
 
 import {
-    ReferenceTokenTransferrer
-} from "../lib/ReferenceTokenTransferrer.sol";
+    ReferenceTokenTransferor
+} from "../lib/ReferenceTokenTransferor.sol";
 
 import {
     ConduitTransfer,
@@ -22,7 +22,7 @@ import {
  *         controller" that can add and remove "channels" or contracts that can
  *         instruct the conduit to transfer approved ERC20/721/1155 tokens.
  */
-contract ReferenceConduit is ConduitInterface, ReferenceTokenTransferrer {
+contract ReferenceConduit is ConduitInterface, ReferenceTokenTransferor {
     address private immutable _controller;
 
     mapping(address => bool) private _channels;

@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
-import "./TokenTransferrerConstants.sol";
+import "./TokenTransferorConstants.sol";
 
 import {
-    TokenTransferrerErrors
-} from "../interfaces/TokenTransferrerErrors.sol";
+    TokenTransferorErrors
+} from "../interfaces/TokenTransferorErrors.sol";
 
 import { ConduitBatch1155Transfer } from "../conduit/lib/ConduitStructs.sol";
 
 /**
- * @title TokenTransferrer
+ * @title TokenTransferor
  * @author 0age
  * @custom:coauthor d1ll0n
  * @custom:coauthor transmissions11
- * @notice TokenTransferrer is a library for performing optimized ERC20, ERC721,
+ * @notice TokenTransferor is a library for performing optimized ERC20, ERC721,
  *         ERC1155, and batch ERC1155 transfers, used by both Seaport as well as
  *         by conduits deployed by the ConduitController. Use great caution when
  *         considering these functions for use in other codebases, as there are
  *         significant side effects and edge cases that need to be thoroughly
  *         understood and carefully addressed.
  */
-contract TokenTransferrer is TokenTransferrerErrors {
+contract TokenTransferor is TokenTransferorErrors {
     /**
      * @dev Internal function to transfer ERC20 tokens from a given originator
      *      to a given recipient. Sufficient approvals must be set on the

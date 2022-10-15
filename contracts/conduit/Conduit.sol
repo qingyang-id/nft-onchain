@@ -5,7 +5,7 @@ import { ConduitInterface } from "../interfaces/ConduitInterface.sol";
 
 import { ConduitItemType } from "./lib/ConduitEnums.sol";
 
-import { TokenTransferrer } from "../lib/TokenTransferrer.sol";
+import { TokenTransferor } from "../lib/TokenTransferor.sol";
 
 import {
     ConduitTransfer,
@@ -26,7 +26,7 @@ import "./lib/ConduitConstants.sol";
  *         approved ERC20/721/1155 tokens to be taken immediately — be extremely
  *         cautious with what conduits you give token approvals to!*
  */
-contract Conduit is ConduitInterface, TokenTransferrer {
+contract Conduit is ConduitInterface, TokenTransferor {
     // Set deployer as an immutable controller that can update channel statuses.
     address private immutable _controller;
 

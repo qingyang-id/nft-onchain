@@ -6,8 +6,8 @@ import { OrderParameters } from "./ConsiderationStructs.sol";
 import { GettersAndDerivers } from "./GettersAndDerivers.sol";
 
 import {
-    TokenTransferrerErrors
-} from "../interfaces/TokenTransferrerErrors.sol";
+    TokenTransferorErrors
+} from "../interfaces/TokenTransferorErrors.sol";
 
 import { CounterManager } from "./CounterManager.sol";
 
@@ -22,7 +22,7 @@ import "./ConsiderationConstants.sol";
 contract Assertions is
     GettersAndDerivers,
     CounterManager,
-    TokenTransferrerErrors
+    TokenTransferorErrors
 {
     /**
      * @dev Derive and set hashes, reference chainId, and associated domain

@@ -6,8 +6,8 @@ import { OrderParameters } from "contracts/lib/ConsiderationStructs.sol";
 import { ReferenceGettersAndDerivers } from "./ReferenceGettersAndDerivers.sol";
 
 import {
-    TokenTransferrerErrors
-} from "contracts/interfaces/TokenTransferrerErrors.sol";
+    TokenTransferorErrors
+} from "contracts/interfaces/TokenTransferorErrors.sol";
 
 import { ReferenceCounterManager } from "./ReferenceCounterManager.sol";
 
@@ -22,7 +22,7 @@ import "contracts/lib/ConsiderationConstants.sol";
 contract ReferenceAssertions is
     ReferenceGettersAndDerivers,
     ReferenceCounterManager,
-    TokenTransferrerErrors
+    TokenTransferorErrors
 {
     /**
      * @dev Derive and set hashes, reference chainId, and associated domain

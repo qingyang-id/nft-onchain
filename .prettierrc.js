@@ -1,13 +1,22 @@
 module.exports = {
+  semi: false,
+  singleQuote: true,
+  printWidth: 80,
+  endOfLine: 'auto',
+  tabWidth: 2,
+  trailingComma: 'all',
   overrides: [
     {
-      files: "*.sol",
+      files: '*.sol',
       options: {
-        tabWidth: 4,
-        printWidth: 80,
-        bracketSpacing: true,
-        compiler: "0.8.14",
+        printWidth: 120,
+        tabWidth: 2,
+        useTabs: false,
+        singleQuote: false,
+        bracketSpacing: false,
+        explicitTypes: 'always',
+        compiler: '0.8.14',
       },
     },
   ],
-};
+}
